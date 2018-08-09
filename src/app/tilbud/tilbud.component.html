@@ -1,0 +1,188 @@
+<section class="content-section bg-primary text-white text-center" id="services">
+
+  <app-tilbud-slide [activePane]="isLeftVisible ? 'left' : 'right'">
+    <div class="container" leftPane >
+     <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">Services</h3>
+        <h2 class="mb-5">Hvad tilbydes</h2>
+      </div>
+       <div class="row">
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-graduation"></i>
+          </span>
+          <h4>
+            <strong>Uddannelse</strong>
+          </h4>
+          <p class="text-faded mb-0">Danplus ApS uddanner årligt nye Vegatestere. Uddannelsen er sammensat på mere end 30 års erfaring.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-pencil"></i>
+          </span>
+          <h4>
+            <strong>Behandling</strong>
+          </h4>
+          <p class="text-faded mb-0">Via Vegatesten kan du få at vide hvordan din krop arbejder.
+            Vegatesten fortæller om det fysiske, psykiske og reaktioner overfor miljømsæssige påvirkninger i dagligdagen.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-tag"></i>
+          </span>
+          <h4>
+            <strong>Produkter</strong>
+          </h4>
+          <p class="text-faded mb-0">Danplus ApS ligger inde med et bredt udvalg af produkter. Se produkterne her!</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-calendar"></i>
+          </span>
+          <h4>
+            <strong>Aktiviteter</strong>
+          </h4>
+          <p class="text-faded mb-0">Danplus ApS planlægger og afholder fra tid til anden, foredrag og andre begivenheder. Se dem her! </p>
+        </div>
+      </div>
+      <button (click)="isLeftVisible = !isLeftVisible">Toggle panes</button>
+    </div>
+    <div class="container" rightPane>
+      <div class="panel-group" id="accordion" close-others="true">
+        <div class="panel panel-default">
+            <div class="content-section-heading">
+                <h3 class="text-secondary mb-0">Uddannelse</h3>
+                <h2 class="mb-5">Skal du være vegatester?</h2>
+            </div>
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Introduktions-seminar til Vegatest Expert apparatet. (Trin 0)</a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <p class="text-faded">
+                        På seminaret præsenterer vi de muligheder, der er i Vegatest Expert’en. Deltagerne kan blive testet efter ønske. Vi fortæller om grundprincipperne i vegatesten:
+                    </p>
+                    <ul>
+                        <li>Biologisk index.</li>
+                        <li>%- test.</li>
+                        <li>Yin/Yang-test.</li>
+                        <li>Fejlsvingninger fra virus og bakterier.</li>
+                        <li>Giftstoffer og tungmetaller.</li>
+                    </ul>
+                    <p class="text-faded">
+                        Derudover fortæller vi om erfaringerne med testmetoden og hvorfor vi går ind for en certificering.
+                        Seminaret kan bruges til at finde ud af, om du har lyst til at arbejde med denne testmetode, om du vil gå på uddannelsen eller ikke.
+                        Du får mulighed for at afprøve testteknikken under vejledning.
+                        Seminaret foregår lørdag d. 11. november 2017 fra kl. 10-15. Prisen er 1.000,- kr. inkl. materiale.
+                        Tilmelding og betaling skal ske senest 14 dage før arrangementet.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Vegatest seminar for begyndere. (Trin 1)</a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p class="text-faded">
+                        Seminaret henvender sig til de behandlere, der ønsker at uddanne sig og arbejde med vegatesten i deres klinik.
+                        Seminaret vil indeholde både undervisning og workshop, hvor deltagerne med støtte fra erfarne testere selv kan træne i Vegatestens muligheder.
+                        Der lægges vægt på at træne trykteknikken og få overblik over apparatets anvendelsesmuligheder. Det belyses, hvordan vi ser på sygdom,
+                        og hvad vi kan gøre for at hjælpe. Det er en forudsætning, at deltagerne har de nødvendige kundskaber i anatomi, fysiologi og sygdomslære. <br />
+                        Seminaret foregår næste gang d. 23.-25. februar i 2018.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Praktik på klinikken. (Trin 2)</a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p class="text-faded">
+                        Efter trin 1 laves der en individuel aftale, hvor terapeuten kommer i praktik 40 timer svarende til cirka 7 dage på klinikken hos Naturterapeuterne på Sofienhøjvej 1.
+                        Her følger deltageren vegatesterne i deres arbejde med klienter. Der vil ind imellem være mulighed for at drøfte de enkelte resultater og stille spørgsmål.
+                        Dagene vil afslutte med spørgsmål og praktisk at prøve de ting, man har set i løbet af dagen. Det vil ligeledes være muligt,
+                        at leje sig ind nogle dage i et rum for at øve sig. Dette sker efter aftale. <br />
+                        Praktikken vil foregå i tidsrummet fra mandag til torsdag fra kl. 9-16
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Cases og test af klient – ca. 7 timer. (Trin 3)</a>
+                </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p class="text-faded">
+                       Den kommende vegatester kommer på klinikken i ca. 7 timer eller bliver besøgt på egen klinik af en uddannet vegatester.
+                       Der arrangeres med en ny klient. Den kommende vegatester tester klienten og bagefter gives vejledning fra den uddannede vegatester.
+                       Vi gennemgår resultatet og eventuelle spørgsmål. Dette er en forpremiere på selve eksamenen, så eventuelle fejl kan nå at blive rettet.
+                    </p>
+                    <p>Vil foregå en fredag efter aftale senest en måned før eksamen.</p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Vegatest eksamen (praktisk og teoretisk). (Trin 4)</a>
+                </h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p class="text-faded">
+                        Seminaret foregår på Sofienhøjvej 1, Kbh.S. Materialet fra foregående moduler gennemgås og spørgsmål besvares.
+                        Dagen slutter af med den skriftlige prøve, som må bestås for at gå videre. Seminarets anden dag indeholder den praktiske prøve,
+                        hvor der bliver arrangeret med en ny klient, som ikke har været testet før. Bestås denne praktiske prøve tilfredsstillende får man sit certifikat.
+                        Certificeringen giver mulighed for, at behandleren kan komme med på den skandinaviske henvisningsliste fra Danplus ApS og Naturterapeuterne,
+                        hvis man ønsker det. Listen vil blandt andet være at finde på vores hjemmeside. Ved certificeringen forpligter man sig til at deltage i det årlige
+                        vegatræf for at følge op på sin uddannelse og møde de andre certificerede testere. Møder man ikke op 2 år i træk, slettes man automatisk af listen,
+                        fornyet prøve må da aftales og tages, før certifikatet kan generhverves.
+                    </p>
+                    <p class="text-faded">
+                        Eksamen afholdes 6. og 7. oktober 2017.<br />
+                        Eksamen afholdes 6. og 7. oktober 2018.<br />
+                        Materiale og forplejning er inkluderet.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Pris på uddannelsen</a>
+                </h4>
+            </div>
+            <div id="collapseSix" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p class="text-faded">
+                        Vegatestuddannelsen købes som en samlet pakke. Pakken indeholder trin 1-4 og prisen er 25.500,- kr. Depositum for uddannelsen er 5.000,- kr.,
+                        som betales senest 5 uger før uddannelsen påbegyndes. Restbeløbet betales senest 3 uge før trin 1. Hvis uddannelsespakken købes allerede ved deltagelse
+                        på trin 0 (introduktions-seminaret, normalpris 1.000,-kr.) medgår Trin 0 gratis i pakken. Der underskrives en uddannelsesaftale ved køb af pakken.
+                        Alle trin afholdes min. 1 gang årligt. Uddannelsespakken skal gennemføres inden for 3 år (gyldighedsfrist).
+                        Uddannelsen til certificeret Vegatester har en estimeret varighed på 140 timer.
+                        Meddelelser om vegatræf vil blive sendt ud til de enkelte certificerede vegatestere, når mødedato er fastlagt. Vegatræffet koster 1.000,-kr. inkl. forplejning og materiale
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <button (click)="isLeftVisible = !isLeftVisible"><- Tilbage"</button>
+    </div>
+  </app-tilbud-slide>
+
+
+</section>
+

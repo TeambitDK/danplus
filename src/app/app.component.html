@@ -1,20 +1,57 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+
+<!-- Header -->
+<header class="masthead d-flex">
+  <div class="container text-center my-auto">
+    <h1 class="mb-1">Danplus ApS</h1>
+    <h3 class="mb-5">
+      <em>Velkommen til!</em>
+    </h3>
+    <a class="btn btn-success btn-xl js-scroll-trigger" href="#contact">Kontakt</a>
+  </div>
+  <div class="overlay"></div>
+</header>
+<!-- About -->
+<section class="content-section bg-light" id="about">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2>Behandling på baggrund af erfaring</h2>
+        <p class="lead mb-5">
+          Danplus ApS har eksisteret siden 1979 og ledes i dag af Joan Lykke.
+          Danplus ApS har arbejdet med Vegatest apparater siden 1980, og der igennem stået bag konceptet for certificering af Vegatest uddannelsen i dens oprindelige form.
+          På nuværende tidspunkt er der cirka 25 certificerede Vegatestere i Danmark.
+          I forbindelse med de erfaringer Danplus ApS har opbygget gennem brugen af Vegatest Expert, har firmaet været med til at udvikle Plusprogrammet,
+          som er homøopatisk medicin, der bygger på resonansterapi.
+        </p>
+        <p class="lead mb-5">Kan jeg hjælpe dig med spørgsmål eller har du kommentarer, så kontakt mig på telefon 3252 1420 eller mail <a href="mailto:joan@vegatest.dk">joan@vegatest.dk</a>!</p>
+          <!-- <p class="lead mb-5">Se listen over andre certificerede vegatestere i Danmark.</p> -->
+        <a class="btn btn-dark btn-xl js-scroll-trigger" target="blank" href="https://www.google.com/maps/d/u/1/edit?mid=1CFBdunMnfoKT419K7cea6YbK8IU&ll=55.45221183789465%2C11.252497054687524&z=8">Andre vegatestere</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<app-tilbud></app-tilbud>
+
+<!--Portfolio -->
+<app-news></app-news>
+
+<!-- Call to Action -->
+<app-kontakt></app-kontakt>
+
+<!-- Footer -->
+<footer class="footer text-center">
+  <div class="container">
+    <p class="text-muted small mb-0">Copyright &copy; Danplus ApS 2018</p>
+  </div>
+</footer>
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+  <i class="fa fa-angle-up"></i>
+</a>
+
+
 
