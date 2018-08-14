@@ -12,6 +12,6 @@ res.sendFile(path.join(__dirname,'/dist/website/index.html'));
 
 });
 
-app.listen(process.env.PORT || 8080, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
 console.log('Server started');
-})
+});

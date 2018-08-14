@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 })
 
 export class TilbudComponent {
-  isLeftVisible = true;
+  isOneVisible = true;
 }

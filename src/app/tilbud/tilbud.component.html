@@ -1,7 +1,7 @@
 <section class="content-section bg-primary text-white text-center" id="services">
 
-  <app-tilbud-slide [activePane]="isLeftVisible ? 'left' : 'right'">
-    <div class="container" leftPane >
+  <app-tilbud-slide [activePane]="isOneVisible ? 'et' : 'to'">
+    <div class="container" et >
      <div class="content-section-heading">
         <h3 class="text-secondary mb-0">Services</h3>
         <h2 class="mb-5">Hvad tilbydes</h2>
@@ -45,9 +45,10 @@
           <p class="text-faded mb-0">Danplus ApS planlægger og afholder fra tid til anden, foredrag og andre begivenheder. Se dem her! </p>
         </div>
       </div>
-      <button (click)="isLeftVisible = !isLeftVisible">Toggle panes</button>
+      <button (click)="isOneVisible = !isOneVisible">Toggle panes</button>
     </div>
-    <div class="container" rightPane>
+
+    <div class="container" to>
       <div class="panel-group" id="accordion" close-others="true">
         <div class="panel panel-default">
             <div class="content-section-heading">
@@ -179,7 +180,7 @@
             </div>
         </div>
       </div>
-      <button (click)="isLeftVisible = !isLeftVisible"><- Tilbage"</button>
+      <button (click)="isOneVisible = !isOneVisible"><- Tilbage"</button>
     </div>
   </app-tilbud-slide>
 

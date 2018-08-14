@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
-type PaneType = 'left' | 'right';
+type PaneType = 'et' | 'to';
 
 @Component({
   selector: 'app-tilbud-slide',
@@ -10,12 +10,12 @@ type PaneType = 'left' | 'right';
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [
     trigger('slide', [
-      state('left', style({ transform: 'translateX(0)' })),
-      state('right', style({ transform: 'translateX(-50%)' })),
+      state('et', style({ transform: 'translateX(0)' })),
+      state('to', style({ transform: 'translateX(-50%)' })),
       transition('* => *', animate(500))
     ])
   ]
 })
 export class TilbudSlideComponent {
-  @Input() activePane: PaneType = 'left';
+  @Input() activePane: PaneType = 'et';
 }
